@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+  <meta name="robots" content="index, follow">
+  <!-- title -->
+  
+    
+  <title>Aplicando o MMQ - Math Methods</title>
+    
+  
+  
+  <!-- open graph -->
+  <meta name="description" content="Aplicando o MMQPara esta atividade foi passado o seguinte grupo de pontos:    i xi yi    1 0.3 1.8   2 2.7 1.9   3 4.5 3.1   4 5.9 3.9   5 7.8 3.3    O objetivo era utilizar o método dos mínimos quadr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Aplicando o MMQ">
+<meta property="og:url" content="http://example.com/2024/06/13/aplicando-metodo-mmq/index.html">
+<meta property="og:site_name" content="Math Methods">
+<meta property="og:description" content="Aplicando o MMQPara esta atividade foi passado o seguinte grupo de pontos:    i xi yi    1 0.3 1.8   2 2.7 1.9   3 4.5 3.1   4 5.9 3.9   5 7.8 3.3    O objetivo era utilizar o método dos mínimos quadr">
+<meta property="og:locale" content="pt_BR">
+<meta property="article:published_time" content="2024-06-13T11:06:47.000Z">
+<meta property="article:modified_time" content="2024-06-13T17:00:34.502Z">
+<meta property="article:author" content="João Szlachta">
+<meta name="twitter:card" content="summary">
+  <!-- canonical -->
+  
+  <link rel="canonical" href="http://example.com/2024/06/13/aplicando-metodo-mmq/">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <!-- CSS -->
+  
+<link rel="stylesheet" href="../../../../css/reset.css">
+
+  
+<link rel="stylesheet" href="../../../../css/style.css">
+
+  
+<link rel="stylesheet" href="../../../../css/markdown.css">
+
+  
+<link rel="stylesheet" href="../../../../css/fonts.css">
+
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+    <body>
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="post-header">
+    <a class="logo" href="../../../../index.html">Math Methods</a>
+    <!-- <div class="logo"><a href="/" title="Len"><img src="/img/logo.svg" alt="Len" aria-label="logo" height="20"></a></div> -->
+        <ul class="nav">
+            
+            <li><a href="../../../../index.html">Home</a></li>
+            
+            <li><a href="../../../../Metodos">Metodos</a></li>
+            
+            <li><a href="../../../../archives">Archives</a></li>
+            
+        </ul>
+
+
+    </a>
+</div>
+
+                
+                <div class="post-main">
+    
+        <div class="post-main-title">
+            Aplicando o MMQ
+        </div>
+        <div class="post-meta">
+            2024-06-13 ｜ 
+            
+        </div>
+        <!-- 圆角分类 -->
+        <!-- <div class="tags"> -->
+            <!--  -->
+        <!-- </div> -->
+        <div class="post-md">
+            <h2 id="Aplicando-o-MMQ"><a href="#Aplicando-o-MMQ" class="headerlink" title="Aplicando o MMQ"></a>Aplicando o MMQ</h2><p>Para esta atividade foi passado o seguinte grupo de pontos:</p>
+<table>
+<thead>
+<tr>
+<th><em>i</em></th>
+<th><em>xi</em></th>
+<th><em>yi</em></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>0.3</td>
+<td>1.8</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2.7</td>
+<td>1.9</td>
+</tr>
+<tr>
+<td>3</td>
+<td>4.5</td>
+<td>3.1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>5.9</td>
+<td>3.9</td>
+</tr>
+<tr>
+<td>5</td>
+<td>7.8</td>
+<td>3.3</td>
+</tr>
+</tbody></table>
+<hr>
+<p>O objetivo era utilizar o método dos mínimos quadrados e perceber a diferença entre as respostas recolhidas pelo código e pela resolução manual. Portanto, são mostrados mais abaixo duas relações sobre as informações necessárias para serem aplicadas no método.</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th><em>i</em></th>
+<th><em>xi.yi</em></th>
+<th><em>(xi)²</em></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>0.54</td>
+<td>0.09</td>
+</tr>
+<tr>
+<td>2</td>
+<td>5.13</td>
+<td>7.29</td>
+</tr>
+<tr>
+<td>3</td>
+<td>13.95</td>
+<td>20.25</td>
+</tr>
+<tr>
+<td>4</td>
+<td>23.01</td>
+<td>34.81</td>
+</tr>
+<tr>
+<td>5</td>
+<td>25.74</td>
+<td>60.84</td>
+</tr>
+</tbody></table>
+<hr>
+<table>
+<thead>
+<tr>
+<th><em>S(xi)</em></th>
+<th><em>S(yi)</em></th>
+<th><em>S(xi.yi)</em></th>
+<th><em>S((xi)²)</em></th>
+<th><em>[S(xi)]²</em></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>21.20</td>
+<td>14.00</td>
+<td>68.37</td>
+<td>123.28</td>
+<td>449.44</td>
+</tr>
+</tbody></table>
+<p>Sendo S() uma representação da operação de somatório.</p>
+<hr>
+<p>Por fim, os resultados de <em>b0</em> e <em>b1</em> foram:</p>
+<p><em><strong>b1 &#x3D; 0.26982</strong></em><br><em><strong>b0 &#x3D; 1.65596</strong></em></p>
+<p>Formando assim a reta <em>ui</em></p>
+<p><em><strong>ui &#x3D; 1.65596 + 0.26982x</strong></em></p>
+<p>Acesse <a href="/Metodos">aqui</a> a regressão linear pelo método dos mínimos quadrados e teste você mesmo!</p>
+
+        </div>
+    
+<!-- tags -->
+
+</div>
+                <div class="footer">
+    <span>Copyright © <script>document.write(new Date().getFullYear())</script> Math Methods</span>
+    <span>Powered by <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a> with <a target="_blank" rel="noopener" href="https:///imzl.com/zenmind">ZenMind</a></span>
+</div>
+
+<link rel="stylesheet" href="../../../../css/a11y-dark.min.css">
+
+
+<script src="../../../../js/highlight.min.js"></script>
+
+
+<script src="../../../../js/highlightjs-line-numbers.js"></script>
+
+<script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+</script>
+
+            </div>
+        </div>
+    </body>
+</html>
